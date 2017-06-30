@@ -8,11 +8,11 @@ organization := "org.broadinstitute"
 
 scalaVersion := "2.12.1"
 
-val wdl4sV = "0.12"
+val wdl4sV = "0.13"
 
 lazy val versionSettings = Seq(
   // Upcoming release, or current if we're on the master branch
-  git.baseVersion := "0.12",
+  git.baseVersion := "0.13",
 
   // Shorten the git commit hash
   git.gitHeadCommit := git.gitHeadCommit.value map { _.take(7) },
@@ -31,8 +31,8 @@ assemblyJarName in assembly := "wdltool-" + git.baseVersion.value + ".jar"
 logLevel in assembly := Level.Info
 
 resolvers ++= Seq(
-  "Broad Artifactory Releases" at "https://artifactory.broadinstitute.org/artifactory/libs-release/",
-  "Broad Artifactory Snapshots" at "https://artifactory.broadinstitute.org/artifactory/libs-snapshot/"
+  "Broad Artifactory Releases" at "https://broadinstitute.jfrog.io/broadinstitute/libs-release/",
+  "Broad Artifactory Snapshots" at "https://broadinstitute.jfrog.io/broadinstitute/libs-snapshot/"
 )
 
 libraryDependencies ++= Seq(
