@@ -1,3 +1,11 @@
+# WDLtool is now called WOMtool and lives under the Cromwell repository. [Click here for WOMtool within Cromwell](https://github.com/broadinstitute/cromwell/tree/develop/womtool). 
+## For information about how to use WOMtool, see the [Cromwell documentation](http://cromwell.readthedocs.io/en/develop/WOMtool/).
+## For the latest WOMtool JAR, see the [Cromwell releases](https://github.com/broadinstitute/cromwell/releases/latest).
+
+------
+------
+
+
 Command line utilities for interacting with WDL
 
 <!---toc start-->
